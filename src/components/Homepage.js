@@ -1,9 +1,9 @@
-import imageMario from "./../images/Mario and Adrian b.jpg";
-import imgDelivery from "../images/delivery.svg";
-import greekSalad from "../images/greek salad.jpg";
-import bruchetta from "../images/bruchetta.svg";
-import lemonDesert from "../images/lemon dessert.png";
-import testImage from "../images/testimonial.jpg";
+import imageMario from "./../assets/images/Mario and Adrian b.jpg";
+import imgDelivery from "../assets/images/delivery.svg";
+import greekSalad from "../assets/images/greek salad.jpg";
+import bruchetta from "../assets/images/bruchetta.svg";
+import lemonDesert from "../assets/images/lemon dessert.png";
+import testImage from "../assets/images/testimonial.jpg";
 import { Link } from "react-router-dom";
 import React from 'react';
 

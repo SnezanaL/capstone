@@ -229,7 +229,7 @@ button.spec-btn.btn {
 
 /* Booking Page */
 .hero-booking {
-  background-image: url(./images/booking.jpg);
+  background-image: url(./assets/images/booking.jpg);
   height: 500px;
   background-size: cover;
   margin-bottom: 50px;
