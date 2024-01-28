@@ -1,9 +1,12 @@
 import { createContext, useContext } from 'react';
 
-export const FormContext = createContext();
+const AppContext = createContext();
 
-export const FormContextProvider = ({ children, value }) => {
-  return <FormContext.Provider value={value}>{children}</FormContext.Provider>;
+export const AppProvider = ({ children, value }) => {
+  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
 
-export const useForm = () => useContext(FormContext);
+export const useAppContext = () => {
+  const globals = useContext(AppContext);
+  return globals;
+};

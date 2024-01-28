@@ -1,4 +1,5 @@
-import { currentDateTime, fetchAPI, generateBookingID } from '../utilities';
+import {  fetchAPI, generateBookingID } from '../utils/dataAPI';
+import { currentDateTime } from '../utils/datatime-helpers';
 
 export const STAGES = ['Reservation Details', 'Thank You'];
 export const OCCASIONS_LIST = [

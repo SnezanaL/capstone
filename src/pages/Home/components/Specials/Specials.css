@@ -1,0 +1,116 @@
+section.LL-Specials {
+  padding: 100px 12%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+
+.specials-titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#LL-Section-SpecialItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2.25rem;
+  flex-wrap: wrap;
+}
+
+.LL-CardHeader {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food-desc {
+  color: var(--color-primary);
+}
+
+.food-price {
+  color: var(--color-secondary);
+  font-weight: 800;
+}
+
+.LL-OrderButton {
+  place-items: flex-end;
+}
+
+.btn.btn-order {
+  width: 100px !important;
+}
+
+/* Special */
+#specials {
+  margin-bottom: 50px;
+}
+.inline-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+button.spec-btn.btn {
+  border-radius: 5px;
+  background: #000;
+  color: #ffffff;
+  width: 200px;
+  height: 60px;
+  padding: auto;
+}
+.spec-row {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.spec-row img{
+  width: 100%;
+
+}
+.spec-row h4 img{
+  width: 22px;
+  margin-left: 10px;
+}
+.spec-row .col{
+ 
+}
+/* .box-special {
+  background-color: #EDEFEE;
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  flex-direction: column;
+} */
+.box-special img {
+  border-radius: 5px 5px 0 0;
+}
+.spec-content {
+  margin: 20px;
+}
+.spec-content h3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Markazi Text';
+  font-size: 24px;
+
+}
+.spec-content h3 span{
+  font-size: 16px;
+
+  color: #EE9972;
+  font-family: Karla;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+  #LL-Section-SpecialItems {
+    gap: 1.25rem;
+  }
+}

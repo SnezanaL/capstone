@@ -30,7 +30,7 @@
   --box-shadow-3: 0px -10px 10px -3px rgb(50 50 50 / 0.15);
 }
 
-.container {
+/* .container {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -39,7 +39,7 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   justify-items: stretch;
-}
+} */
 
 /** Animations **/
 

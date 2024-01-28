@@ -1,8 +1,8 @@
-import FacebookSVG from '../../assets/icon-facebook.svg';
-import InstagramSVG from '../../assets/icon-instagram.svg';
-import PinterestSVG from '../../assets/icon-pinterest.svg';
-import SnapchatSVG from '../../assets/icon-snapchat.svg';
-import YelpSVG from '../../assets/icon-yelp.svg';
+import FacebookSVG from '../assets/icons/icon-facebook.svg';
+import InstagramSVG from '../assets/icons/icon-instagram.svg';
+import PinterestSVG from '../assets/icons/icon-pinterest.svg';
+import SnapchatSVG from '../assets/icons/icon-snapchat.svg';
+import YelpSVG from '../assets/icons/icon-yelp.svg';
 
 const socialmedia = [
   {

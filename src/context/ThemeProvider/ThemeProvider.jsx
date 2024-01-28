@@ -8,7 +8,7 @@ export const ThemeProvider = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <div className="container">{children}</div>
+      <div className="main-content">{children}</div>
     </ThemeContext.Provider>
   );
 };

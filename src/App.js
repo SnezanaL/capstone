@@ -1,28 +1,73 @@
-import "./App.css";
-import Header from "./components/Header";
-import Nav from "./components/Nav";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
-import HomePage from "./components/Homepage";
-import BookingPage from "./components/BookingPage";
-import { Route, Routes } from "react-router-dom";
+import { useReducer } from "react";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+  Outlet,
+ 
+} from "react-router-dom";
+import { AppProvider, ThemeProvider } from "./context";
+import { Header  } from "./components";
+import { Footer } from "./components/Footer/Footer";
 
-function App() {
+import "./App.css";
+import { Home, ConfirmedBooking } from "./pages";
+import { BookingPage } from './pages/Booking/BookingPage';
+
+const Root = () => {
   return (
     <>
-     <div className="App">
+    
       <Header />
-
-      <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/booking" element={<BookingPage />}></Route>
-      </Routes>
-
+      <Outlet />
       <Footer />
-      </div>
     </>
+  );
+};
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      
+        <Route path="/" element={<Root />}>
+          <Route index element={<Home />} />
+          <Route path="bookings" element={<BookingPage />}>
+            <Route path="thank-you" element={<ConfirmedBooking />} />
+          </Route>
+        </Route>
+      
+    </>
+  )
+);
+
+function App() {
+  const initialAppState = {
+    previousLocation: ["/"],
+  };
+  const reducer = (state, { type, payload }) => {
+    switch (type) {
+      case "setPreviousLocation": {
+        return {
+          // ...state,
+          // previousLocation: [...state.previousLocation]
+          //   .slice(0, 1)
+          //   .push(payload),
+        };
+      }
+
+      default:
+        break;
+    }
+  };
+  const [stateGlobal, dispatchGlobal] = useReducer(reducer, initialAppState);
+  return (
+    <AppProvider value={{ stateGlobal, dispatchGlobal }}>
+      <ThemeProvider>
+        <RouterProvider router={router} />
+      </ThemeProvider>
+    </AppProvider>
   );
 }
 
 export default App;
-
