@@ -2,7 +2,7 @@
   {
     "id": 1,
     "rating": 5,
-    "name": "Joseph Gonzalez",
+    "name": "Emma Gonzalez",
     "review": "The falafel platter at Little Lemon is delicious, with perfectly seasoned crispy balls and a variety of tangy sauces.",
     "image": "./../assets/images/testimonials/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg"
   },
@@ -23,7 +23,7 @@
   {
     "id": 4,
     "rating": 5,
-    "name": "Thomas Doe",
+    "name": "Joana Doe",
     "review": "The stuffed grape leaves at the Little Lemon grill are a must-try, with a delicate and tangy filling wrapped in a tender grape leaf.",
     "image": "./../assets/images/testimonials/warren-VVEwJJRRHgk-unsplash.jpg"
   }

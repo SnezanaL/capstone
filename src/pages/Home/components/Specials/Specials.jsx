@@ -4,15 +4,10 @@ import "./Specials.css";
 import specials from "../../../../data/specials.json";
 //import image1 from '../../../../assets/images/testimonials';
 
-// const images = require.context("../../../../assets/images/testimonials", true);
-// const imageList = images.keys().map((image) => images(image));
-// console.log(images);
-// console.log(imageList);
+
 
 const images = require.context("../../../../assets/images/specials", true);
 const imageList = images.keys().map((image) => images(image));
-
-console.log(imageList);
 
 export const Specials = ({ data, itemWidth }) => {
 
