@@ -1,21 +1,23 @@
-import logo from '../images/Logo.svg';
+import { Route, Routes, Link } from "react-router-dom";
+import logo from "../images/Logo.svg";
+import React from 'react';
 
 const Nav = () => {
   return (
     <>
-    <nav className="navigation-bar">
-    <img className="logo" src={logo}/>
-    <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Menu</a></li>
-        <li><a href="">Reservations</a></li>
-        <li><a href="">Order Online</a></li>
-        <li><a href="">Login</a></li>
-    </ul>
-</nav>
+      <nav className="navigation-bar">
+        <img className="logo" src={logo} />
+        <div className="menu-links">
+          <Link to="/" className="nav-item">
+            Home
+          </Link>
+          <Link to="/booking" className="nav-item">
+            Booking
+          </Link>
+        </div>
+      </nav>
     </>
-  )
-}
+  );
+};
 
 export default Nav;

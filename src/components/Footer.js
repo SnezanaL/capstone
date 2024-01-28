@@ -1,4 +1,5 @@
 import img from './../images/Mario and Adrian A.jpg';
+import React from 'react';
 
 const Footer = () => {
   return (
