@@ -82,7 +82,7 @@ h1 {
 
 }
 .image img {
-  width: 100%;
+  width: 65%;
   min-height: 520px;
   object-fit: cover;
   object-position: 77% 0px;
@@ -114,5 +114,8 @@ h1 {
   .LL-Hero-right img {
     height: 100%;
     width: 100%;
+  }
+  .image img {
+    top: 5%; 
   }
 }

@@ -5,12 +5,15 @@ import {
   faUserCircle,
   faCartShopping,
 } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Logo, Icon } from '../../components';
 import { BurgerMenu } from './components';
 import { useWindowResize } from '../../hooks/useResize';
 import { useScrollDirection } from '../../hooks/useScroll';
 
 import navigation from '../../data/menu.json';
+
+import { ReactSVG } from "react-svg";
 
 export const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -87,6 +90,8 @@ export const Header = () => {
 
   return (
     <header className="header" role="region" aria-label="Header Region" data-scroll={direction}>
+     
+      
       {windowWidth < 768 && (
         <BurgerMenu
           ref={burgerRef}
@@ -95,8 +100,10 @@ export const Header = () => {
           onKeyUp={handleKeys}
           ariaControls="LL-HeaderMenu"
         />
+      
+      
       )}
-      <div className="container navigation-bar">
+      <div className=" navigation-bar">
       <Logo
         className="LL-HeaderLogo"
         src={
@@ -104,6 +111,8 @@ export const Header = () => {
         }
         height={windowWidth > 768 && windowWidth < 840 ? '50px' : '60px'}
       />
+
+
 
       {showMenu && (
         <nav
@@ -134,6 +143,8 @@ export const Header = () => {
         </nav>
       )}
       </div>
+
+    
       
 
       {/* <nav role="menubar">

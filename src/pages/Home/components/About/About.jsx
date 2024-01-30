@@ -1,5 +1,8 @@
 import { Heading, Stack } from '../../../../components';
 import './About.css';
+import src1 from '../../../../assets/images/restaurant chef B.jpg';
+import src2 from '../../../../assets/images/Mario and Adrian b.jpg';
+
 
 export const About = () => {
   return (
@@ -12,8 +15,8 @@ export const About = () => {
           basis="50%"
         >
           <Stack.Item vertical>
-            <Heading>Little Lemon</Heading>
-            <p>Chicago</p>
+            <Heading tag="h2" size="xl">Little Lemon</Heading>
+            <Heading  tag="h2" size="lg">Chicago</Heading>
           </Stack.Item>
 
           <p>
@@ -29,14 +32,14 @@ export const About = () => {
           <section id="about-images">
             <div id="about-first-image">
               <img
-                src="https://ik.imagekit.io/zenius/Coursera/html-css/little-lemon-pastas_-BfcomSI5.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674426273746"
-                alt="Little Lemon - Burritos"
+                src={src1}
+                alt="Little Lemon - Chef"
               />
             </div>
             <div id="about-second-image">
               <img
-                src="https://ik.imagekit.io/zenius/Coursera/html-css/little-lemon-hero_szKmkAXsc.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675005773288"
-                alt="Little Lemon - Pastas"
+                src={src2}
+                alt="Little Lemon - Mario and Adrian"
               />
             </div>
           </section>
