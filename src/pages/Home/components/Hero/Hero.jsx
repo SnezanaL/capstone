@@ -32,7 +32,7 @@ export const Hero = () => {
         </Button>
           </div>
           <div className="col-md-6 image">
-            {console.log(src)}
+           
             <img src={src} alt="Little Lemon - Hero" />
           </div>
         </div>

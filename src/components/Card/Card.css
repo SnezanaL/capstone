@@ -23,6 +23,7 @@ article.LL-Card {
 .LL-CardImage.top-full img {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+  height: 24vh;
 }
 
 .LL-CardImage.left {

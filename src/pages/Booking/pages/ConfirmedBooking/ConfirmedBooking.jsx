@@ -22,23 +22,17 @@ export const ConfirmedBooking = () => {
           console.log('Successfully added to Local Storage');
         } else throw new Error('Could not add to Local Storage');
       } catch (err) {
-        console.log(err.message);
+        console.error(err.message);
       }
     }
   }, [data, stage]);
 
   return stage === 'Thank You' ? (
     <Main>
-      <section className="LL-BookingConfirmation">
-        <Logo
-          src="https://ik.imagekit.io/zenius/Coursera/html-css/Asset_16_4x_nnQ67G1HkI.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674426270946"
-          height="100px"
-          width="fit-content"
-        />
-        <Heading size="xl">Booking Confirmed</Heading>
+      <section className="LL-BookingConfirmation pt-5">
+        <Heading size="xl" >Booking Confirmed</Heading>
         <p>
-          We are pleased to inform you that your reservation request has been
-          received and confirmed.
+        Your table has been successfully reserved. We look forward to serving you!
         </p>
       </section>
 

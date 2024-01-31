@@ -14,7 +14,6 @@ export const Card = ({
   const position = IMAGE_PLACEMENT.includes(imagePosition) ? imagePosition : "";
   const classes = `LL-Card ${position}`;
 
-  console.log(image);
   return (
     <article className={classes} style={{ width: width ?? "auto" }}>
       <section

@@ -3,7 +3,9 @@ const seededRandom = function (seed) {
   var a = 185852;
   var s = seed % m;
   return function () {
+    console.log((s = (s * a) % m) / m);
     return (s = (s * a) % m) / m;
+
   };
 };
 
@@ -19,6 +21,7 @@ export const fetchAPI = function (date) {
       result.push(i + ':30');
     }
   }
+  console.log(result);
   return result;
 };
 export const submitAPI = function (formData) {
