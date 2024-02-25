@@ -2,7 +2,7 @@
   "name": "little-lemon",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://snezanal.github.io/capstone/",
+  "homepage": "<https://snezanal.github.io/capstone/>",
   "author": "Snezana Lalatovic",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
