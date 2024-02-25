@@ -1,7 +1,7 @@
 {
   "name": "little-lemon",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://snezanal.github.io/capstone/",
   "author": "Snezana Lalatovic",
   "dependencies": {
